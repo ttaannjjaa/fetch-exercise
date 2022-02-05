@@ -9,8 +9,62 @@
     <title>Document</title>
   </head>
   <body>
-    <button data-js="Button" class="Button">
-      Click me and go to the console.
-    </button>
+    <h1>Are you a fortune-teller?</h1>
+    <div class="wrapper">
+      <div class="card-staple"></div>
+      <div class="card-first card-staple">
+        <img
+          src="./images/tim-stief-dH6IjhWHNQQ-unsplash.jpg"
+          alt="back of play card showing building architecture"
+          width="240px"
+          height="300px"
+        />
+      </div>
+      <section name="fetchContent" hidden></section>
+    </div>
+    <div class="answerComp"></div>
+    <p class="teaser">
+      Which house of Hogwarts will the character of the next card belong to?
+      Choose by pushing a button?
+    </p>
+    <form name="buttonfield" data-js="buttonfield" class="buttonfield">
+      <label
+        name="buttonfield"
+        for="button"
+        aria-label="4 Buttons for the Houses of Hogwarts"
+      ></label>
+      <button
+        type="button"
+        data-js="ButtonGryff"
+        class="button"
+        name="buttonfield"
+      >
+        Gryffindor
+      </button>
+      <button
+        type="button"
+        data-js="ButtonHuffle"
+        class="button"
+        name="buttonfield"
+      >
+        Hufflepuff
+      </button>
+      <button
+        type="button"
+        data-js="ButtonSlyth"
+        class="button"
+        name="buttonfield"
+      >
+        Slytherin
+      </button>
+      <button
+        type="button"
+        data-js="ButtonRaven"
+        class="button"
+        name="buttonfield"
+      >
+        Ravenclaw
+      </button>
+    </form>
   </body>
 </html>

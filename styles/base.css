@@ -1,7 +1,84 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  width: 100%;
+  height: 50px;
+  background-color: var(--greyred);
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.buttonfield {
+  display: flex;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--greyred);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: var(--black);
+  color: var(--white);
+  border: solid 1px black;
+  margin: 5px;
+  display: inline;
+  font-size: bold;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  padding: 10px;
+  grid-row: 1 / 2;
+}
+
+.card-staple {
+  border: 1px solid var(--black);
+  height: 300px;
+  width: 240px;
+  box-shadow: 5px 5px 5px grey;
+  position: absolute;
+  top: 45px;
+}
+
+.card-first {
+  z-index: 5;
+  position: absolute;
+  top: 48px;
+  right: -110px;
+
+  /* Photo by <a href="https://unsplash.com/@timstief?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Stief</a> on <a href="https://unsplash.com/backgrounds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+}
+
+.teaser {
+  padding-bottom: 15px;
+}
+
+label {
+  display: none;
 }
