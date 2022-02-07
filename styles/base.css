@@ -75,6 +75,16 @@ h1 {
   */
 }
 
+.card {
+  border: 1px solid var(--black);
+  height: 300px;
+  width: 240px;
+  box-shadow: 5px 5px 5px grey;
+  position: absolute;
+  top: 48px;
+  z-index: 10;
+}
+
 .teaser {
   padding-bottom: 15px;
 }
