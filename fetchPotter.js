@@ -41,4 +41,4 @@ export default function FetchPotter() {
       console.log(houseHogwarts);
     }); //end of forEach-method
   } // end of workFunction
-} // end of export function
+} // end of export functiongit
