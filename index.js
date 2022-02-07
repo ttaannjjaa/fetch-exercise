@@ -4,5 +4,5 @@ const buttons = document.querySelectorAll('[data-js=Button]');
 
 buttons.forEach(Button);
 
-import FetchPotter from './fetchPotter.js';
-FetchPotter();
+import fetchPotter from './fetchPotter.js';
+fetchPotter();
