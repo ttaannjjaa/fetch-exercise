@@ -1,24 +1,16 @@
-export default function FetchPotter() {
+export default async function fetchPotter() {
   const apiUrl = 'https://hp-api.herokuapp.com/api/characters/students';
-  let dataArray = [];
+  let houseHogwarts;
 
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(currentData => myFunction(currentData))
-    .catch(error => console.log(error));
-
-  let houseHogwarts = '';
-
-  function myFunction(incomingData) {
-    dataArray = incomingData;
-    console.log(dataArray);
-    return dataArray;
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    workFunction(data);
+  } catch (error) {
+    console.error('ERROR', error);
   }
 
-  workFunction(dataArray);
-
-  function workFunction() {
-    console.log(dataArray);
+  function workFunction(dataArray) {
     dataArray.forEach(person => {
       const name = person.name;
       const yearOfBirth = person.yearOfBirth;
@@ -38,7 +30,7 @@ export default function FetchPotter() {
       }
       const htmlPlace = document.querySelector('[data-js="fetchContent"]');
       htmlPlace.append(cardElement);
-      console.log(houseHogwarts);
+      //  console.log(houseHogwarts);
     }); //end of forEach-method
   } // end of workFunction
-} // end of export functiongit
+} // end of export function
